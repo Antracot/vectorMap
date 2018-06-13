@@ -1,0 +1,253 @@
+@import "vars.sass"
+@import "app/libs/jvectormap/jquery-jvectormap-2.0.3"
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	::after
+		content: " "
+		display: block
+		width: 100%
+		height: 0
+		clear: both
+
+body
+	width: 100%
+	height: 100%
+	background-color: HoneyDew 
+	color: #fff
+	margin: auto
+	margin: 0
+	text-align: center
+
+.h2_title
+	color: #000
+	font-size: 20px
+	font-family: 'Semibold'
+	margin-top: 15px
+.click_to_order
+	font-size: 18px
+	font-family: 'Semibold'
+
+.h2_title_mob
+	color: #000
+	font-size: 16px
+	font-family: 'Semibold'
+	margin-top: 15px
+	margin-left: 5%
+	margin-right: 5%
+.click_to_order_mob
+	font-size: 12px
+	font-family: 'Semibold'	
+
+.pre_loader
+	position: absolute
+	top: 0
+	bottom: 0
+	margin: auto
+	right: 0
+	left: 0
+
+.my_popup
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	margin: auto
+	width: 1200px
+	height: 675px
+	background-color: rgba(132,192,32, 0.5)
+	overflow: hidden
+	z-index: 999
+	display: none
+	.popup_cont
+		margin: 237px auto
+		margin-left: 425px
+		background-color: #FFF
+		width: 350px
+		height: 200px
+		border-radius: 5px
+		float: left
+		.call_back_from
+			margin-top: 32px
+			position: absolute
+			.input
+				margin-left: 60px
+				width: 230px
+				height: 35px
+				display: block
+				margin-bottom: 15px
+				border-radius: 3px
+				border: 1px solid grey
+				padding-left: 5px
+			.input_submit
+				margin-left: 60px
+				width: 230px
+				height: 35px
+				display: block
+				background-color: #84C020
+				border: none
+				border-radius: 3px
+				cursor: pointer
+				transition: all 0.25s
+				font-family: 'Semibold'
+				color: #fff
+				font-size: 14px
+				outline: none
+				&:hover
+					background-color: #FFF
+					border: 1px solid grey
+					transition: all 0.25s
+					color: grey
+		.thanks
+			margin-top: 65px
+			position: absolute
+			display: none
+			left: 0
+			right: 0
+			.thks_text
+				font-family: 'Semibold'
+				color: #000
+				font-size: 16px
+	.close_my_popup_img
+		float: left
+		width: 30px
+		height: 30px
+		margin-left: 30px
+		margin-top: 235px
+
+.my_popup_mob
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	margin: auto
+	width: 1200px
+	height: 675px
+	background-color: rgba(132,192,32, 0.5)
+	overflow: hidden
+	z-index: 999
+	display: none
+	.close_my_popup_img
+		width: 30px
+		height: 30px
+		right: 25px
+		margin: 40% auto
+		margin-right: 25px
+		float: right
+		margin-bottom: 5% 
+	.popup_cont
+		margin: 0% auto
+		margin-left: 5%
+		background-color: #FFF
+		width: 90%
+		height: 30%
+		border-radius: 5px
+		float: left
+		.call_back_from
+			margin-top: 32px
+			position: absolute
+			left: 0
+			right: 0
+			.input
+				position: relative
+				margin-left: 15%
+				width: 70%
+				height: 35px
+				display: block
+				margin-bottom: 15px
+				border-radius: 3px
+				border: 1px solid grey
+				padding-left: 5px
+			.input_submit
+				margin-left: 15%
+				width: 70%
+				height: 35px
+				display: block
+				background-color: #84C020
+				border: none
+				border-radius: 3px
+				cursor: pointer
+				transition: all 0.25s
+				font-family: 'Semibold'
+				color: #fff
+				font-size: 14px
+				outline: none
+				&:hover
+					background-color: #FFF
+					border: 1px solid grey
+					transition: all 0.25s
+					color: grey
+		.thanks
+			margin-top: 65px
+			position: absolute
+			display: none
+			left: 0
+			right: 0
+			.thks_text
+				font-family: 'Semibold'
+				color: #000
+				font-size: 16px
+	
+
+
+.main_wrap
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	margin: auto
+	width: 1200px
+	height: 675px
+	background-color: rgba(0,0,0, 0.5)
+	overflow: hidden
+	border: 3px solid grey
+	display: none
+	.map_img
+		position: absolute
+		// border: 1px solid #fff
+		width: 100%
+		height: 100%
+		z-index: 10
+		cursor: pointer
+		// float: left
+		// transform: scale(0.5)
+		// opacity: 0.2
+		// background-image: url("");
+	.map_svg
+		position: absolute	
+		width: 100%
+		height: 100%
+		z-index: 11
+.jvectormap-tip
+	z-index: 100
+	background-color: #84C020
+	text-align: left
+	border: 1px solid #fff	
+
+
+.jvectormap-zoomin 
+	background-color: #84C020
+.jvectormap-zoomout 
+	background-color: #84C020
+
+.jvectormap-region
+.jvectormap-element		
+	// opacity: 0
+.main_head
+	min-height: 100px
+.tip_styles
+	font-size: 18px
+	color: #fff
+	font-family: 'Semibold'	
+.tip_mob
+	font-size: 12px
+	color: #fff
+	font-family: 'Semibold'		
+
+.hidden
+	display: none
